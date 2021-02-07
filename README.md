@@ -19,7 +19,7 @@ Interface de fácil entendimento e uso pelo cliente.
 		 }
 		 Console.Write(fatorial);
 		 Console.ReadLine();
-1.2
+1.3
 
         void prime_num(long num) {
                 bool isPrime = true;
@@ -44,6 +44,27 @@ Interface de fácil entendimento e uso pelo cliente.
             Console.ReadLine();
     
         }
+1.4
+
+      using System.Linq;
+      
+      int vogal = 0;
+                char[] caracteres = { 'a', 'e', 'i', 'o', 'u', 'A' , 'E' , 'I', 'O', 'U'};
+            
+            Console.WriteLine("Digite a frase e descubra quantas vogais tem:");
+    
+            char[] nome_completo = Console.ReadLine().ToLower().ToCharArray();
+    
+            for (int conta = 0; conta < nome_completo.Length; conta++) {
+                if (caracteres.Contains(nome_completo[conta])) {
+                    vogal++;
+                }
+            }
+    
+            Console.WriteLine("Total de " + vogal + " vogais");
+            Console.Read();
+    
+            Console.ReadKey();
 
 
 
