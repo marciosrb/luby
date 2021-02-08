@@ -76,14 +76,14 @@ Interface de fácil entendimento e uso pelo cliente.
         Console.WriteLine("Digite o valor de entrada!");
         entrada = Console.ReadLine();
         entradaTratada = Convert.ToInt32(entrada);
-    
+        
         Console.WriteLine("Digite o desconto!");
         desconto = Console.ReadLine();
         descontoTratado = Convert.ToInt32(desconto);
-    
+        
         calculo = (entradaTratada * descontoTratado) /100;
         calculoFinal = entradaTratada - calculo;
-    
+        
         resultadoTratado = calculoFinal.ToString("C", CultureInfo.CurrentCulture);
         
         Console.WriteLine(resultadoTratado);
@@ -91,4 +91,22 @@ Interface de fácil entendimento e uso pelo cliente.
         Console.Read();
         Console.ReadKey();
 
+1.6
 
+
+
+
+            DateTime data1, data2;
+            string data01, data02;
+            Console.WriteLine("Digite a primeira data!");
+            data01 = Console.ReadLine();
+            data1 = Convert.ToDateTime(data01);
+    
+            Console.WriteLine("Digite a segunda data!");
+            data02 = Console.ReadLine();
+            data2 = Convert.ToDateTime(data02);
+    
+            Console.WriteLine("Diferença dias entre a primeira e a segunda data: " + (data2 - data1).Days);
+    
+            Console.Read();
+            Console.ReadKey();
