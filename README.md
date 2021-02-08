@@ -44,6 +44,34 @@ Interface de fácil entendimento e uso pelo cliente.
             Console.ReadLine();
     
         }
+1.5
+
+```
+using System.Globalization; 
+  
+string entrada, desconto, saida;
+double calculo, entradaTratada, descontoTratado, calculoFinal;
+string resultadoTratado;
+    
+Console.WriteLine("Digite o valor de entrada!");
+entrada = Console.ReadLine();
+entradaTratada = Convert.ToInt32(entrada);
+
+Console.WriteLine("Digite o desconto!");
+desconto = Console.ReadLine();
+descontoTratado = Convert.ToInt32(desconto);
+
+calculo = (entradaTratada * descontoTratado) /100;
+calculoFinal = entradaTratada - calculo;
+
+resultadoTratado = calculoFinal.ToString("C", CultureInfo.CurrentCulture);
+
+Console.WriteLine(resultadoTratado);
+
+Console.Read();
+Console.ReadKey();
+```
+
 1.4
 
       using System.Linq;
@@ -65,31 +93,7 @@ Interface de fácil entendimento e uso pelo cliente.
             Console.Read();
     
             Console.ReadKey();
-1. 5
 
-        using System.Globalization; 
-          
-        string entrada, desconto, saida;
-        double calculo, entradaTratada, descontoTratado, calculoFinal;
-        string resultadoTratado;
-            
-        Console.WriteLine("Digite o valor de entrada!");
-        entrada = Console.ReadLine();
-        entradaTratada = Convert.ToInt32(entrada);
-        
-        Console.WriteLine("Digite o desconto!");
-        desconto = Console.ReadLine();
-        descontoTratado = Convert.ToInt32(desconto);
-        
-        calculo = (entradaTratada * descontoTratado) /100;
-        calculoFinal = entradaTratada - calculo;
-        
-        resultadoTratado = calculoFinal.ToString("C", CultureInfo.CurrentCulture);
-        
-        Console.WriteLine(resultadoTratado);
-        
-        Console.Read();
-        Console.ReadKey();
 
 1.6
 
