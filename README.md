@@ -94,8 +94,6 @@ Interface de fácil entendimento e uso pelo cliente.
 1.6
 
 
-
-
             DateTime data1, data2;
             string data01, data02;
             Console.WriteLine("Digite a primeira data!");
@@ -110,3 +108,22 @@ Interface de fácil entendimento e uso pelo cliente.
     
             Console.Read();
             Console.ReadKey();
+1.7
+
+```
+int[] atividade = new int[6];
+            string numeros = "", tipo = "";
+            for (int i = 1; i < 6; i++) {
+                Console.WriteLine($"Insira o {i}° numero: ");
+                atividade[i] = int.Parse(Console.ReadLine());
+                tipo += atividade[i] % 2 == 1 ? "impar, " : "par, ";
+                numeros += atividade[i] + ", ";
+            }
+            Console.Clear();
+            Console.Write($"Os seguintes numeros foram digitados: \n{numeros}\n{tipo}");
+            Console.Read();
+            Console.ReadKey();
+```
+
+
+
