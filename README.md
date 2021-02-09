@@ -1,11 +1,3 @@
-# 3 Vending Machine
-
-Utilizado o banco de dados do SQLite por ser mais leve e de fácil configuração, basta alterar o caminho do arquivo.
-
-O sistema possui aviso quando o cliente escolher um produto sem estoque.
-
-Interface de fácil entendimento e uso pelo cliente.
-
 # 1 Lógica de Programação
 
 1.1
@@ -187,3 +179,12 @@ create unique index [UX_tabela_telefone.telefone] on tabela_telefone(telefone);
 DROP TABLE tabela_telefone;  
 ```
 
+# 3 Desafio em Orientação a Objetos
+
+# Vending Machine
+
+Utilizado o banco de dados do SQLite por ser mais leve e de fácil configuração, para este sistema não precisava ter um Gerenciador SQL robusto, para uso basta alterar o caminho do arquivo.
+
+O sistema possui aviso quando o cliente escolher um produto sem estoque.
+
+Interface de fácil entendimento e uso pelo cliente.
