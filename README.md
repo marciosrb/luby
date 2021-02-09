@@ -194,3 +194,5 @@ Utilizado o banco de dados do SQLite por ser mais leve e de fácil configuraçã
 O sistema possui aviso quando o cliente escolher um produto sem estoque.
 
 Interface de fácil entendimento e uso pelo cliente.
+
+1. [Vending Machine](https://github.com/marciovisualsistemas/luby/tree/main/Vending-Machine/Vending_Machine)
