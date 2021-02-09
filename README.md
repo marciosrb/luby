@@ -131,5 +131,59 @@ Interface de fácil entendimento e uso pelo cliente.
        Console.ReadKey();
 ```
 
+# 2 SQL
 
+2.1 
+
+```
+select nome from tabela_pessoa union all select evento from tabela_evento
+```
+
+2.2
+
+```
+select nome from tabela_pessoa where nome like '%Doe%'
+```
+
+2.3
+
+```
+insert into tabela_evento values (5, 'Evento E', 5)
+```
+
+2.4
+
+```
+update tabela_evento set pessoa_id = '5' where evento ='Evento D'
+```
+
+2.5
+
+```
+delete from tabela_evento where evento = 'Evento B'
+```
+
+2.7
+
+```
+alter table tabela_pessoa add idade int null
+```
+
+2.8
+
+```
+create table table_telefone (id int null,telefone varchar(200) NOT NULL, pessoa_id int null, FOREIGN KEY(pessoa_id) references tabela_evento(pessoa_id))
+```
+
+2.9
+
+```
+create unique index [UX_table_telefone.telefone] on table_telefone(telefone);
+```
+
+2.10
+
+```
+DROP TABLE table_telefone;  
+```
 
