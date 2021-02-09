@@ -182,7 +182,7 @@ create unique index [UX_tabela_telefone.telefone] on tabela_telefone(telefone);
 2.10
 
 ```sql
-DROP TABLE tabela_telefone;  
+drop table tabela_telefone;  
 ```
 
 # 3 Desafio em Orientação a Objetos
