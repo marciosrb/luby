@@ -172,18 +172,18 @@ alter table tabela_pessoa add idade int null
 2.8
 
 ```
-create table table_telefone (id int null,telefone varchar(200) NOT NULL, pessoa_id int null, FOREIGN KEY(pessoa_id) references tabela_evento(pessoa_id))
+create table tabela_telefone (id int null,telefone varchar(200) NOT NULL, pessoa_id int null, FOREIGN KEY(pessoa_id) references tabela_evento(pessoa_id))
 ```
 
 2.9
 
 ```
-create unique index [UX_table_telefone.telefone] on table_telefone(telefone);
+create unique index [UX_tabela_telefone.telefone] on tabela_telefone(telefone);
 ```
 
 2.10
 
 ```
-DROP TABLE table_telefone;  
+DROP TABLE tabela_telefone;  
 ```
 
