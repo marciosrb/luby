@@ -15,32 +15,34 @@
 ```
 1.3
 
-          void prime_num(long num) {
-                bool isPrime = true;
-                for (int i = 0; i <= num; i++) {
-                    for (int j = 2; j <= num; j++) {
-                        if (i != j && i % j == 0) {
-                            isPrime = false;
-                            break;
-                        }
+```c#
+      void prime_num(long num) {
+            bool isPrime = true;
+            for (int i = 0; i <= num; i++) {
+                for (int j = 2; j <= num; j++) {
+                    if (i != j && i % j == 0) {
+                        isPrime = false;
+                        break;
                     }
-                    if (isPrime) {
-                        Console.WriteLine("Prime:" + i);
-                    }
-                    isPrime = true;
                 }
+                if (isPrime) {
+                    Console.WriteLine("Prime:" + i);
+                }
+                isPrime = true;
             }
-            
-            static void Main(string[] args) {
-    
-            Program p = new Program();
-            p.prime_num(10L); //Aqui colocar o valor limite do for
-            Console.ReadLine();
-    
         }
+        
+        static void Main(string[] args) {
+
+        Program p = new Program();
+        p.prime_num(10L); //Aqui colocar o valor limite do for
+        Console.ReadLine();
+
+    }
+```
 1.4
 
-```
+```c#
         using System.Linq;
   
         int vogal = 0;
@@ -64,51 +66,55 @@
 
 1.5
 
-           using System.Globalization; 
-      
-           string entrada, desconto, saida;
-           double calculo, entradaTratada, descontoTratado, calculoFinal;
-           string resultadoTratado;
-        
-           Console.WriteLine("Digite o valor de entrada!");
-           entrada = Console.ReadLine();
-           entradaTratada = Convert.ToInt32(entrada);
+```c#
+       using System.Globalization; 
+  
+       string entrada, desconto, saida;
+       double calculo, entradaTratada, descontoTratado, calculoFinal;
+       string resultadoTratado;
     
-           Console.WriteLine("Digite o desconto!");
-           desconto = Console.ReadLine();
-           descontoTratado = Convert.ToInt32(desconto);
-    
-           calculo = (entradaTratada * descontoTratado) /100;
-           calculoFinal = entradaTratada - calculo;
-    
-           resultadoTratado = calculoFinal.ToString("C", CultureInfo.CurrentCulture);
-    
-           Console.WriteLine(resultadoTratado);
-    
-           Console.Read();
-           Console.ReadKey();
+       Console.WriteLine("Digite o valor de entrada!");
+       entrada = Console.ReadLine();
+       entradaTratada = Convert.ToInt32(entrada);
+
+       Console.WriteLine("Digite o desconto!");
+       desconto = Console.ReadLine();
+       descontoTratado = Convert.ToInt32(desconto);
+
+       calculo = (entradaTratada * descontoTratado) /100;
+       calculoFinal = entradaTratada - calculo;
+
+       resultadoTratado = calculoFinal.ToString("C", CultureInfo.CurrentCulture);
+
+       Console.WriteLine(resultadoTratado);
+
+       Console.Read();
+       Console.ReadKey();
+```
 
 
 1.6
 
 
-           DateTime data1, data2;
-           string data01, data02;
-           Console.WriteLine("Digite a primeira data!");
-           data01 = Console.ReadLine();
-           data1 = Convert.ToDateTime(data01);
-    
-           Console.WriteLine("Digite a segunda data!");
-           data02 = Console.ReadLine();
-           data2 = Convert.ToDateTime(data02);
-    
-           Console.WriteLine("Diferença dias entre a primeira e a segunda data: " + (data2 - data1).Days);
-    
-           Console.Read();
-           Console.ReadKey();
+```c#
+       DateTime data1, data2;
+       string data01, data02;
+       Console.WriteLine("Digite a primeira data!");
+       data01 = Console.ReadLine();
+       data1 = Convert.ToDateTime(data01);
+
+       Console.WriteLine("Digite a segunda data!");
+       data02 = Console.ReadLine();
+       data2 = Convert.ToDateTime(data02);
+
+       Console.WriteLine("Diferença dias entre a primeira e a segunda data: " + (data2 - data1).Days);
+
+       Console.Read();
+       Console.ReadKey();
+```
 1.7
 
-```
+```c#
        int[] atividade = new int[6];
        string numeros = "", tipo = "";
                 for (int i = 1; i < 6; i++) {
@@ -127,55 +133,55 @@
 
 2.1 
 
-```
+```sql
 select nome from tabela_pessoa union all select evento from tabela_evento
 ```
 
 2.2
 
-```
+```sql
 select nome from tabela_pessoa where nome like '%Doe%'
 ```
 
 2.3
 
-```
+```sql
 insert into tabela_evento values (5, 'Evento E', 5)
 ```
 
 2.4
 
-```
+```sql
 update tabela_evento set pessoa_id = '5' where evento ='Evento D'
 ```
 
 2.5
 
-```
+```sql
 delete from tabela_evento where evento = 'Evento B'
 ```
 
 2.7
 
-```
+```sql
 alter table tabela_pessoa add idade int null
 ```
 
 2.8
 
-```
+```sql
 create table tabela_telefone (id int null,telefone varchar(200) NOT NULL, pessoa_id int null, FOREIGN KEY(pessoa_id) references tabela_evento(pessoa_id))
 ```
 
 2.9
 
-```
+```sql
 create unique index [UX_tabela_telefone.telefone] on tabela_telefone(telefone);
 ```
 
 2.10
 
-```
+```sql
 DROP TABLE tabela_telefone;  
 ```
 
