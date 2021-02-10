@@ -1,3 +1,10 @@
+As questões 1.2, 1.9, 1.10 não consegui fazer a implementação a tempo, mas com tempo e estudo, tenho certeza que posso fazer a devida implementação.
+Segue meu GitHub: https://github.com/marciovisualsistemas/
+
+Lá tem alguns projetos comerciais e projetos de estudo.
+
+
+
 # 1 Lógica de Programação
 
 1.1
